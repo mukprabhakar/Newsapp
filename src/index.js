@@ -1,14 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // Updated import for React 18
+import ReactDOM from "react-dom";  // React 17 style
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // To log web vitals in console during development, uncomment below:
